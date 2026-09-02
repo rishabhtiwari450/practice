@@ -1,4 +1,3 @@
-```css
 /* Reset */
 * {
   margin: 0;
@@ -13,14 +12,14 @@ html {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #222;
-  background: #f5f5f5;
+  color: #e2e8f0;
+  background: #0f172a;
 }
 
 /* Navbar */
 nav {
-  background: #222;
-  color: white;
+  background: #020617;
+  color: #ffffff;
   padding: 15px 8%;
 
   display: flex;
@@ -35,6 +34,7 @@ nav {
 .logo {
   font-size: 24px;
   font-weight: bold;
+  color: #38bdf8;
 }
 
 nav ul {
@@ -44,12 +44,13 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: #cbd5e1;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #4dabf7;
+  color: #38bdf8;
 }
 
 /* Hero */
@@ -66,8 +67,9 @@ nav a:hover {
 
   background: linear-gradient(
     135deg,
-    #4dabf7,
-    #845ef7
+    #0f172a,
+    #312e81,
+    #164e63
   );
 
   color: white;
@@ -81,6 +83,7 @@ nav a:hover {
 .hero p {
   font-size: 20px;
   margin-bottom: 25px;
+  color: #cbd5e1;
 }
 
 /* Button */
@@ -92,16 +95,20 @@ nav a:hover {
   border: none;
   border-radius: 6px;
 
-  background: white;
-  color: #333;
+  background: #38bdf8;
+  color: #082f49;
 
   text-decoration: none;
 
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
+
+  transition: 0.3s;
 }
 
 .btn:hover {
+  background: #22d3ee;
   transform: translateY(-2px);
 }
 
@@ -114,6 +121,7 @@ section {
   text-align: center;
   margin-bottom: 40px;
   font-size: 32px;
+  color: #f8fafc;
 }
 
 /* Cards */
@@ -124,7 +132,7 @@ section {
 }
 
 .card {
-  background: white;
+  background: #1e293b;
 
   padding: 30px;
 
@@ -132,22 +140,37 @@ section {
 
   text-align: center;
 
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #334155;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
 }
 
 .card h3 {
   margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.card p {
+  color: #cbd5e1;
 }
 
 /* About */
 .about {
-  background: white;
+  background: #111827;
   text-align: center;
 }
 
 .about p {
   max-width: 700px;
   margin: auto;
+  color: #cbd5e1;
 }
 
 /* Contact */
@@ -165,10 +188,25 @@ input,
 textarea {
   padding: 13px;
 
-  border: 1px solid #ccc;
+  border: 1px solid #334155;
   border-radius: 6px;
 
   font-size: 16px;
+
+  background: #1e293b;
+  color: #ffffff;
+
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #38bdf8;
 }
 
 textarea {
@@ -177,14 +215,18 @@ textarea {
 }
 
 form .btn {
-  background: #4dabf7;
-  color: white;
+  background: #38bdf8;
+  color: #082f49;
+}
+
+form .btn:hover {
+  background: #22d3ee;
 }
 
 /* Footer */
 footer {
-  background: #222;
-  color: white;
+  background: #020617;
+  color: #94a3b8;
 
   text-align: center;
 
@@ -211,4 +253,3 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-```
