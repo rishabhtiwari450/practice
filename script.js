@@ -1,4 +1,3 @@
-```javascript
 // Get the contact form
 const contactForm = document.getElementById("contactForm");
 
@@ -12,11 +11,8 @@ contactForm.addEventListener("submit", function (event) {
   const name = document.getElementById("name").value;
 
   // Show message
-  alert(
-    "Thanks, " + name + "! Your message has been received."
-  );
+  alert("Thanks, " + name + "! Your message has been received.");
 
   // Clear the form
   contactForm.reset();
 });
-```
